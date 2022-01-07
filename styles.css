@@ -1,0 +1,104 @@
+/* styles for technical_documentation_page */
+
+* {
+    font-family: sans-serif;
+    color: rgb(44, 44, 44);
+}
+
+h1, h2, h3 {
+    font-family: serif;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h1 {
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 18px 0;
+    margin: 0;
+}
+
+code {
+    font-family: monospace;
+}
+
+a {
+    color: #ff8800;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8800;
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+#navlist {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    overflow: auto;
+    border: solid white;
+    border-width: 2px 0 0 0;
+}
+
+#navlist li {
+    padding: 6px;
+    text-align: center;
+}
+
+#navlist a {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+#navlist a:hover {
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+#navbar {
+    width: 250px;
+    height: calc(100vh - 12px);
+    padding: 0 6px;
+    margin: 0 6px;
+    position: sticky;
+    align-self: flex-start;
+    top: 6px;
+    background-color: #686868;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-doc {
+    max-width: 620px;
+    padding: 0 6px;
+    margin: 8px 6px;
+}
+
+@media (max-width: 940px) {
+    #navbar {
+        width: 620px;
+        position: initial;
+        text-align: center;
+        height: 100%;
+    }
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 0.2rem;
+}
